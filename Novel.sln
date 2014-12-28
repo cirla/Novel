@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Novel", "Novel\Novel.fsproj", "{23FF10BA-8FCF-43F7-B983-F3E79DD9AE65}"
+EndProject
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "NovelMac", "NovelMac\NovelMac.fsproj", "{4DDCD120-9435-4905-A74B-8FC501490A29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		AppStore|Any CPU = AppStore|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23FF10BA-8FCF-43F7-B983-F3E79DD9AE65}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
+		{23FF10BA-8FCF-43F7-B983-F3E79DD9AE65}.AppStore|Any CPU.Build.0 = Release|Any CPU
+		{23FF10BA-8FCF-43F7-B983-F3E79DD9AE65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23FF10BA-8FCF-43F7-B983-F3E79DD9AE65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23FF10BA-8FCF-43F7-B983-F3E79DD9AE65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23FF10BA-8FCF-43F7-B983-F3E79DD9AE65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DDCD120-9435-4905-A74B-8FC501490A29}.AppStore|Any CPU.ActiveCfg = AppStore|Any CPU
+		{4DDCD120-9435-4905-A74B-8FC501490A29}.AppStore|Any CPU.Build.0 = AppStore|Any CPU
+		{4DDCD120-9435-4905-A74B-8FC501490A29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DDCD120-9435-4905-A74B-8FC501490A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DDCD120-9435-4905-A74B-8FC501490A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DDCD120-9435-4905-A74B-8FC501490A29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = NovelMac\NovelMac.fsproj
+	EndGlobalSection
+EndGlobal
