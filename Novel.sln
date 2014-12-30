@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Novel", "Novel\Novel.fsproj", "{23FF10BA-8FCF-43F7-B983-F3E79DD9AE65}"
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "LibNovel", "Novel\LibNovel.fsproj", "{23FF10BA-8FCF-43F7-B983-F3E79DD9AE65}"
 EndProject
 Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "NovelMac", "NovelMac\NovelMac.fsproj", "{4DDCD120-9435-4905-A74B-8FC501490A29}"
 EndProject

@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>NovelMac</RootNamespace>
     <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
-    <AssemblyName>NovelMac</AssemblyName>
+    <AssemblyName>Novel</AssemblyName>
     <SuppressXamMacUpsell>True</SuppressXamMacUpsell>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -85,17 +85,16 @@
     <None Include="Info.plist" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls.fs" />
     <Compile Include="NovelWindow.fs" />
-    <Compile Include="NovelWindowController.fs" />
     <Compile Include="NovelDocument.fs" />
-    <Compile Include="NovelDocumentController.fs" />
-    <Compile Include="AppDelegate.fs" />
+    <Compile Include="App.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Novel\Novel.fsproj">
+    <ProjectReference Include="..\Novel\LibNovel.fsproj">
       <Project>{23FF10BA-8FCF-43F7-B983-F3E79DD9AE65}</Project>
-      <Name>Novel</Name>
+      <Name>LibNovel</Name>
     </ProjectReference>
   </ItemGroup>
   <ProjectExtensions>

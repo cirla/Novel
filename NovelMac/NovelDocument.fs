@@ -29,3 +29,13 @@ type NovelDocument () as this =
     override this.ReadFromData (data, typeName, outError) =
         outError <- NSError.FromDomain (NSError.OsStatusErrorDomain, -4)
         false
+
+type NovelDocumentController () =
+    inherit NSDocumentController ()
+
+    static member SharedDocumentController
+        with get () = NSDocumentController.SharedDocumentController :?> NovelDocumentController
+
+    override this.NewDocument (sender : NSObject) =
+        let document = new NovelDocument ()
+        document.ShowWindows ()
