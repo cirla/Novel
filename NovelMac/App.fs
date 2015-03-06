@@ -41,6 +41,13 @@ type NovelAppDelegate () =
     let aboutWindow = new AboutWindow ()
     let documentController = new NovelDocumentController ()
 
+    let newDocument sender =
+        let controller = NovelDocumentController.SharedDocumentController
+        controller.NewDocument sender
+
+    let newDocumentHandler (sender:obj) (e:EventArgs) =
+        newDocument (sender :?> NSObject)
+
     let quitHandler (sender:obj) (e:EventArgs) =
         NSApplication.SharedApplication.Terminate (sender :?> NSObject)
 
@@ -64,7 +71,7 @@ type NovelAppDelegate () =
         let fileMenuItem = new NSMenuItem ()
         let fileMenu = new NSMenu "File"
 
-        fileMenu.AddItem (new NSMenuItem ("New...", "n", (fun sender e -> () )))
+        fileMenu.AddItem (new NSMenuItem ("New...", "n", newDocumentHandler))
         fileMenu.AddItem (new NSMenuItem ("Open...", "o", (fun sender e -> () )))
         fileMenu.AddItem NSMenuItem.SeparatorItem
         fileMenu.AddItem (new NSMenuItem ("Save", "s", (fun sender e -> () )))
@@ -84,8 +91,7 @@ type NovelAppDelegate () =
     override this.FinishedLaunching notification =
         NSApplication.SharedApplication.MainMenu <- createMainMenu NSProcessInfo.ProcessInfo.ProcessName
 
-        let controller = NovelDocumentController.SharedDocumentController
-        controller.NewDocument this
+        newDocument this
 
 module main =
     [<EntryPoint>]
